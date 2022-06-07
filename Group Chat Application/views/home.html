@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="home.js"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="chat-sidebar">
+            <div class="groupnames-container" id="groupnames-container">
+            <h3> Chat Groups</h3>
+                <ul id="groups-list">
+                    <li>School Friends</li>
+                    <li> College Friends</li>
+                    <button class="create-group" id="create-group"> Create A Group</button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content" id="myModal2">
+                        <span class="close">&times;</span>
+                        <p>Choose the Users you want to add to the group</p>
+                      </div>
+
+
+                </ul>
+                <button class="create-group" id="create-group"> Create A Group</button>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content" id="myModal2">
+                      <span class="close">&times;</span>
+                      <p>Choose the Users you want to add to the group</p>
+                    </div>
+                </ul>
+
+                  </div>
+            </div>
+            <div class="onlineusers-container">
+            <div class="onlineusers-container" id="groupMembers-container">
+            <h3> Available Users </h3>
+                <ul id="users-signedup">
+                    <li>Asha</li>
+                    <li>Kavya</li>
+                    <li>Hari</li>
+                    <li>Sai</li>
+                <ul id="Group-Members">
+                    <li class="member-btn" id="member-btn">deepthi<button onclick="removeUser()"> X </button></li>
+                    <li class="member-btn" id="member-btn">Asha</li>
+                    <li class="member-btn" id="member-btn">Monika</li>
+                    <li class="member-btn" id="member-btn">Rishitha</li>
+                </ul>
+            </div>
+        </div>
+        <div class="chat-container">
+            <div class="header">
+              <div class="logo"> Chat Here</div>
+              <div class="subtext">Connect to people</div>
+            </div>
+            <div class="chat-box" id="chat-box">
+              <div class="message primary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message secondary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message primary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message primary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message secondary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message secondary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message primary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message primary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message secondary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+              <div class="message secondary">
+                Lorem ipsum dolor sit amet.
+                <div class="timestamp">02:11</div>
+              </div>
+            </div>
+            <div class="input-area" id="input-area">
+              <input type="text" name="" id="text-content" />
+              <button id="sendMsg"><i class="fas fa-paper-plane"> SEND </i></button>
+            </div>
+            
+          </div>
+    </div>
+    
+  </body>
+</html>
